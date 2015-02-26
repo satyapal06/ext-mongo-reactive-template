@@ -25,7 +25,7 @@ Your development environment will require:
 * Clone the project into local system
 * To run the Play framework 2.3.0, you need JDK 6 or later
 * Install Typesafe Activator if you do not have it already. You can get it from here: [download](http://www.playframework.com/download)
-*  MongoDB see [here]() for installation instructions.
+*  MongoDB see [here](http://docs.mongodb.org/manual/tutorial/install-mongodb-enterprise-on-windows/) for installation instructions.
 
 Once the prerequisites have been installed, you will be able to execute the following from a terminal.
 
