@@ -57,11 +57,16 @@ Genarate sample data by executing the following script in mongo console.
 <pre>
 > use ext-mongo-reactive-template
 switched to db ext-mongo-reactive-template
-> db.createCollection("users";)
-2015-02-26T15:36:50.728+0530 SyntaxError: Unexpected token ;
 > db.createCollection("users");
 { "ok" : 1 }
-> for (var i = 1; i <= 10000; i++) {db.users.insert( { firstName: "UserFirstName"+i, lastName: "UserLastName"+i, age: 60, active: true } )}
+> for (var i = 1; i <= 10000; i++) {
+	db.users.insert( { 
+		firstName: "UserFirstName"+i, 
+		lastName: "UserLastName"+i, 
+		age: 60, active: true 
+	})
+}
+
 WriteResult({ "nInserted" : 1 })
 > db.users.find();
 { "_id" : ObjectId("54eef174b304e99c0edb1215"), "firstName" : "UserFirstName1", "lastName" : "UserLastName1", "age" : 60, "active" : true }
