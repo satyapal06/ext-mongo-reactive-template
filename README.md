@@ -54,7 +54,7 @@ This should fetch all the dependencies and start a Web Server listening on *loca
 Note: This will create a MongoDB Collection for you automatically, a freebie from the Driver!
 
 Genarate sample data by executing the following script in mongo console.
-<pre>
+```
 > use ext-mongo-reactive-template
 switched to db ext-mongo-reactive-template
 > db.createCollection("users");
@@ -91,4 +91,4 @@ WriteResult({ "nInserted" : 1 })
 { "_id" : ObjectId("54eef175b304e99c0edb1228"), "firstName" : "UserFirstName20", "lastName" : "UserLastName20", "age" : 60, "active" : true }
 Type "it" for more
 >
-</pre>
+```
